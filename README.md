@@ -1,10 +1,24 @@
-This project aim is to make windows 10 usable and safe. 
+Melhorias esperadas:
 
-## What it does
+Mudança do plano de energia para alto desempenho;
+Desativação do Windows Defender;
+Desativação do iphelper por utilizar a internet pra transferir quantidade massiva de informações suspeitas e desnecessárias, provavelmente atualizações do windows onde usuário desativou;
+Desativação do atualizador do windows;
+Desativação do firewall do windows;
+Desativação de serviços que minam o desempenho do windows ou apresentam ações ou tráfego de rede suspeito;
+Remoção do pacote de programas inúteis que vem em algumas versões do windows;
+Desativação dos alertas;
+Desativação do fast boot por causa conflitos com algum serviços;
+Desativação do shadow copy, pela sua inutilidade por natureza;
+Desativação da restauração do sistema, devido a sua inutilidade natural e nunca funcionar quando precisa;
+Desativação do Xbox Dvr por causar problemas de fps em jogos;
+ 
 
-- Disable windows services that still download windows updates even if user dont want it
-- Disable windows services with unusual data traffic
-- Useless and questionable services like "Windows Telemetry"
-- Obliteration of the windows updades, regain control of your bandwidth
-- Installation of those VC++ resources that should came with windows anyway
-- Clean all those bloatware that came with windows installation
+Uso (script):
+
+Abrir o powershell em modo de administrador;
+Executar Set-ExecutionPolicy unrestricted;
+Confirmar tudo;
+Baixe o arquivo de texto do anexo e renomeie para script.ps1;
+Copie o arquivo para pasta raiz c:/
+Executar C:/script.ps1 dentro do powershell
